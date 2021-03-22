@@ -1,0 +1,20 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ed1b24;
+  --secondary: #ffab00;
+  --primaryDarkGreyFont: #acacac;
+  --darkBg: #2a2d36;
+}
+
+/* div {
+  border: 1px solid red;
+} */

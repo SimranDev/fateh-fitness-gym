@@ -1,0 +1,23 @@
+.carousel-container img {
+  height: 580px;
+  object-fit: cover;
+}
+
+.x {
+  position: absolute;
+  font-size: 30px;
+  color: whitesmoke;
+  margin: 30px;
+  z-index: 1;
+  text-align: initial;
+  width: 50%;
+}
+
+.y {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 400px;
+}

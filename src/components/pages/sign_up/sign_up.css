@@ -1,0 +1,385 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.parent {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+form span {
+  font-size: 16px;
+  padding-left: 1px;
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+.btns {
+  display: flex;
+}
+
+.back-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  border: none;
+  color: whitesmoke;
+}
+
+.bg-img {
+  /* opacity: 0; */
+  width: 40%;
+  background-image: url("../../../images/bg-Images/singup_bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(
+    100% 17%,
+    93% 10%,
+    100% 0%,
+    40% 0%,
+    0% 0%,
+    0% 53%,
+    0% 100%,
+    100% 100%,
+    96% 86%,
+    100% 77%,
+    94% 75%,
+    100% 33%,
+    89% 32%,
+    100% 30%
+  );
+  clip-path: polygon(
+    100% 17%,
+    93% 10%,
+    100% 0%,
+    40% 0%,
+    0% 0%,
+    0% 53%,
+    0% 100%,
+    100% 100%,
+    96% 86%,
+    100% 77%,
+    94% 75%,
+    100% 33%,
+    89% 32%,
+    100% 30%
+  );
+  position: relative;
+  left: 0;
+
+  -webkit-animation: slideInAnim ease 1; /* call our keyframe named slideInAnim, use animattion ease and repeat it only 1 time */
+  -moz-animation: slideInAnim ease 1;
+  animation: slideInAnim ease 1;
+
+  -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@keyframes slideInAnim {
+  from {
+    left: -120px;
+    opacity: 0.1;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.img-area {
+  position: relative;
+  height: 100vh;
+  /* border: 1px red dotted; */
+}
+
+.input-section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.error {
+  height: 22px;
+}
+
+.error:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #080f0f;
+}
+
+.input-section p {
+  color: orange;
+  font-size: 12px;
+}
+
+.user-details form,
+button {
+  margin: 4px;
+}
+
+.user-details {
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px red dotted; */
+}
+
+.user-details h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: 900;
+  color: #080f0f;
+}
+
+.user-details label {
+  text-align: left;
+  display: block;
+  color: #080f0f;
+  font-size: 20px;
+  font-weight: 600;
+  /* border: 1px dotted red; */
+}
+
+.user-details input {
+  width: 100%;
+  line-height: 30px;
+  font-size: 18px;
+  padding: 6px 10px;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  box-shadow: inset 0px 1px 3px 0px rgb(0 0 0 / 8%);
+  background: #fafafa;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* border: 1px red dotted; */
+}
+
+.signup-brand-logo {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: auto;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.logo-name svg {
+  display: flex;
+  flex-direction: row;
+  height: 36px;
+  width: auto;
+  align-items: center;
+  margin: 10px 6px;
+  /* border: 1px yellow dotted; */
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.btm-txt {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  color: #ddd;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-btn {
+  letter-spacing: 0.1rem;
+  margin-top: 20px;
+  font-size: 18px;
+  height: 54px;
+  color: var(--primary);
+  font-weight: 700;
+  width: 100%;
+  border: 3px solid;
+  border-color: var(--primary);
+  background-color: rgba(255, 255, 255, 0);
+  transition: 1s;
+}
+
+.signup-btn:hover {
+  color: white;
+  border-color: white;
+}
+
+.btnfos-4 {
+  overflow: hidden;
+  position: relative;
+}
+
+.btnfos-4::before {
+  background: var(--primary);
+  box-shadow: 10px;
+  opacity: 0.8;
+  content: "";
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  top: 0;
+  left: -100%;
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.btnfos-4::after {
+  background: var(--primary);
+  content: "";
+  height: 100%;
+  top: 0;
+  left: -100%;
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1) 0.2s;
+}
+
+.btnfos-4:hover::before,
+.btnfos-4:hover::after {
+  left: 0;
+  box-shadow: 2px 0px 14px rgb(0 0 0 / 60%);
+}
+
+.country-code-sec {
+  display: flex;
+  width: 100%;
+}
+.country-code-sec input:first-child {
+  width: 40px;
+  padding: 6px 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.country-code-sec input:last-child {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/*******************************************
+PHONE
+*******************************************/
+@media screen and (max-width: 426px) {
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    width: auto;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border: 1px red dotted; */
+  }
+
+  .logo * {
+    height: 6%;
+    width: 100%;
+  }
+
+  .bg-img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: none;
+  }
+
+  .btm-txt {
+    display: none;
+  }
+
+  .user-details {
+    height: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    width: 100%;
+    padding: 0 10px 10px 10px;
+    bottom: 0;
+  }
+
+  .user-details h1 {
+    display: none;
+  }
+
+  .user-details label {
+    color: whitesmoke;
+    font-weight: 400;
+  }
+
+  .btns {
+    width: auto;
+    align-items: center;
+  }
+
+  .signup-btn {
+    width: 100%;
+    height: 60px;
+    margin: 20px 4px 0 0;
+  }
+
+  .back-btn {
+    position: initial;
+    background-color: var(--primary);
+    color: whitesmoke;
+    height: 60px;
+    margin: 0;
+    width: 60px;
+  }
+
+  .back-btn-link {
+    margin: 20px 0 0 4px;
+    display: flex;
+  }
+
+  .user-details label {
+    font-size: 18px;
+  }
+
+  .user-details form {
+    margin: 0px 4px;
+  }
+}
