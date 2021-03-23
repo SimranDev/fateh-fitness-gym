@@ -227,6 +227,13 @@
   }
 
   .navbar-icon {
-    display: none;
+    height: 30px;
+  }
+
+  .navbar-logo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
   }
 }
