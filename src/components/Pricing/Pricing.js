@@ -1,5 +1,3 @@
-import { useEffect, useRef, useState } from "react";
-
 import Button from "../Button";
 import "./pricing.css";
 import { ReactComponent as IndividualIc } from "../../images/icons/individual.svg";

@@ -1,6 +1,6 @@
-import { useState, forwardRef, useRef } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes, FaWindows } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import Button from "./Button";
 import "./navbar.css";

@@ -1,5 +1,4 @@
 //****** CUSTOM HOOK ******//
-
 import { useState } from "react";
 
 const useForm = (validate) => {
