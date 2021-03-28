@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Pricing = () => {
   return (
     <div id="pricing">
-      <div className="pricing__section">
+      <div className="pricing__section" id="fb-root">
         <div className="pricing__wrapper">
           <h1 className="pricing__heading">MEMBERSHIPS</h1>
           <div className="pricing__container">
@@ -73,6 +73,24 @@ const Pricing = () => {
               </div>
             </Link>
           </div>
+        </div>
+        <div
+          class="fb-post"
+          data-href="https://www.facebook.com/20531316728/posts/10154009990506729/"
+          data-width="500"
+          data-show-text="true"
+        >
+          <blockquote
+            cite="https://www.facebook.com/20531316728/posts/10154009990506729/"
+            class="fb-xfbml-parse-ignore"
+          >
+            Posted by{" "}
+            <a href="https://www.facebook.com/facebookapp/">Facebook App</a>{" "}
+            on&nbsp;
+            <a href="https://www.facebook.com/20531316728/posts/10154009990506729/">
+              Thursday, 27 August 2015
+            </a>
+          </blockquote>
         </div>
       </div>
     </div>

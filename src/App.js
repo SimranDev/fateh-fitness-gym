@@ -12,10 +12,10 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <Navbar/>
+          <Navbar />
           <CarouselSlider />
-          <ServicesSection  />
-          <Pricing  />
+          <ServicesSection />
+          <Pricing />
           <Footer id="footer" />
         </Route>
         <Route path="/SignUp">
