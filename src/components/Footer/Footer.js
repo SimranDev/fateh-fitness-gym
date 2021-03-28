@@ -4,6 +4,12 @@ import { MdLocationOn, MdLocalPhone, MdEmail } from "react-icons/md";
 import { ImWhatsapp, ImTwitter, ImFacebook, ImInstagram } from "react-icons/im";
 
 const Footer = () => {
+  // const whatsAppURL = "https://wa.me";
+
+  const openWhatsApp = (whatsAppURL) => {
+    window.open(whatsAppURL);
+  };
+
   return (
     <div className="parent-container">
       <Grid container>
@@ -34,7 +40,14 @@ const Footer = () => {
             <h3>Social Links</h3>
             <div className="social-block-section">
               <div className="social-block">
-                <ImWhatsapp className="social-ic" />
+                <ImWhatsapp
+                  className="social-ic"
+                  onClick={() =>
+                    openWhatsApp(
+                      "https://wa.me/+919815100033?text=I want to join Fateh Fitness Club"
+                    )
+                  }
+                />
               </div>
               <div className="social-block">
                 <ImTwitter className="social-ic" />
