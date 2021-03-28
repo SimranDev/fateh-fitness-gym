@@ -73,7 +73,6 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 className="nav-links"
-                to="/"
                 onClick={() => {
                   setClick(false);
                 }}
@@ -95,28 +94,31 @@ const Navbar = () => {
               </Link>
             </li>
           </ScrollIntoView>
-
-          <li className="nav-item">
-            <Link className="nav-links" to="/">
-              Contact Us
-            </Link>
-          </li>
-          <li className="nav-btn">
-            {button ? (
-              <Link to="/SignUp">
-                <Button buttonStyle="btn--primary--solid">Free Trial</Button>
+          <ScrollIntoView selector="#pricing">
+            <li className="nav-item">
+              <Link className="nav-links" to="/">
+                Contact Us
               </Link>
-            ) : (
-              <Link to="/SignUp">
-                <Button
-                  buttonStyle="btn--primary--solid"
-                  buttonSize="btn--mobile"
-                >
-                  Free Trial
-                </Button>
-              </Link>
-            )}
-          </li>
+            </li>
+          </ScrollIntoView>
+          <div>
+            <li className="nav-btn">
+              {button ? (
+                <Link to="/SignUp">
+                  <Button buttonStyle="btn--primary--solid">Free Trial</Button>
+                </Link>
+              ) : (
+                <Link to="/SignUp">
+                  <Button
+                    buttonStyle="btn--primary--solid"
+                    buttonSize="btn--mobile"
+                  >
+                    Free Trial
+                  </Button>
+                </Link>
+              )}
+            </li>
+          </div>
         </ul>
         <div className="menu-icon-div">
           <div className="menu-icon" onClick={handleClick}>
