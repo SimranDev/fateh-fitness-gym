@@ -16,7 +16,7 @@ function App() {
           <CarouselSlider />
           <ServicesSection />
           <Pricing />
-          <Footer id="footer" />
+          <Footer/>
         </Route>
         <Route path="/SignUp">
           <SignUp />

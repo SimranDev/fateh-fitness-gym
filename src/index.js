@@ -11,8 +11,9 @@ ReactDOM.render(
         defer
         crossorigin="anonymous"
         src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0"
-        nonce="NXDedhPi"
-      ></script>
+        nonce="7H3JUWJy"
+      >
+        </script>
     </Helmet>
     <App />
   </React.StrictMode>,

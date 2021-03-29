@@ -1,42 +1,60 @@
-import { Grid } from "@material-ui/core";
 import "./Footer.css";
 import { MdLocationOn, MdLocalPhone, MdEmail } from "react-icons/md";
 import { ImWhatsapp, ImTwitter, ImFacebook, ImInstagram } from "react-icons/im";
 
 const Footer = () => {
-  // const whatsAppURL = "https://wa.me";
-
   const openWhatsApp = (whatsAppURL) => {
     window.open(whatsAppURL);
   };
 
   return (
-    <div className="parent-container">
-      <Grid container>
-        <Grid
-          container
-          xs={12}
-          sm={4}
-          direction="column"
-          justify="flex-start"
-          className="grids"
-        >
-          <h3>Contact Us!</h3>
-          <ul className="list-items">
-            <li>
-              <MdLocationOn className="ic" />
-              Near Burj Sahib, Dhariwal, Gurdaspur
-            </li>
-            <li>
-              <MdLocalPhone className="ic" />
-              +91-9815100033
-            </li>
-            <li>
-              <MdEmail className="ic" />
-              fatehfitness@gmail.com
-            </li>
-          </ul>
-          <Grid>
+    <div className="parent-container" id="footer">
+      <div className="social-container">
+        <div className="flex-row">
+          <h3 className="fb-feed-txt">SOCIAL FEED</h3>
+          <div className="fb-section">
+            <div
+              class="fb-page"
+              data-href="https://www.facebook.com/fatehfitnessgym5"
+              data-tabs="timeline"
+              data-width="500"
+              data-height="400"
+              data-small-header="true"
+              data-adapt-container-width="true"
+              data-hide-cover="true"
+              data-show-facepile="false"
+            >
+              <blockquote
+                cite="https://www.facebook.com/fatehfitnessgym5"
+                class="fb-xfbml-parse-ignore"
+              >
+                <a href="https://www.facebook.com/fatehfitnessgym5">
+                  Fateh Fitness Gym
+                </a>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div className="social-section">
+          <div className="m-top">
+            <h3>Contact Us!</h3>
+            <ul className="list-items">
+              <li>
+                <MdLocationOn className="ic" />
+                Near Burj Sahib, Dhariwal, Gurdaspur
+              </li>
+              <li>
+                <MdLocalPhone className="ic" />
+                +91-9815100033
+              </li>
+              <li>
+                <MdEmail className="ic" />
+                fatehfitness@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div className="social-links m-top">
             <h3>Social Links</h3>
             <div className="social-block-section">
               <div className="social-block">
@@ -50,28 +68,39 @@ const Footer = () => {
                 />
               </div>
               <div className="social-block">
-                <ImTwitter className="social-ic" />
+                <ImTwitter
+                  className="social-ic"
+                  onClick={() =>
+                    openWhatsApp("https://twitter.com/fatehfitnessgym")
+                  }
+                />
               </div>
               <div className="social-block">
-                <ImFacebook className="social-ic" />
+                <ImFacebook
+                  className="social-ic"
+                  onClick={() =>
+                    openWhatsApp("https://www.facebook.com/fatehfitnessgym5")
+                  }
+                />
               </div>
               <div className="social-block">
-                <ImInstagram className="social-ic" />
+                <ImInstagram
+                  className="social-ic"
+                  onClick={() =>
+                    openWhatsApp("https://www.instagram.com/fatehfitnessgym/")
+                  }
+                />
               </div>
             </div>
-          </Grid>
-        </Grid>
-      </Grid>
-      <Grid
-        container
-        style={{ backgroundColor: "#353535", height: "40px" }}
-        justify="center"
-        alignItems="center"
-      >
-        <p>Copyright Fateh Fitness © 2021&nbsp;&nbsp;</p>
+          </div>
+        </div>
+      </div>
 
-        <h6 style={{ color: "var(--primary)" }}>V: 01.29.2021.09:53</h6>
-      </Grid>
+      <div className="footer-feet">
+        <p style={{ color: "var(--primaryDarkGreyFont)", fontSize: "12px" }}>
+          Copyright Fateh Fitness © 2021&nbsp;&nbsp;
+        </p>
+      </div>
     </div>
   );
 };

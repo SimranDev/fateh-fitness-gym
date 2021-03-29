@@ -94,10 +94,10 @@ const Navbar = () => {
               </Link>
             </li>
           </ScrollIntoView>
-          <ScrollIntoView selector="#pricing">
+          <ScrollIntoView selector="#footer">
             <li className="nav-item">
               <Link className="nav-links" to="/">
-                Contact Us
+                Social Feed
               </Link>
             </li>
           </ScrollIntoView>
