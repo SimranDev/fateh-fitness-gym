@@ -27,18 +27,16 @@ const useForm = (validate) => {
     if (errors == null) {
       console.log("Success");
     } else {
+      console.log("Y");
       setErrors(validate(values));
       setStatus("Booked");
-      let response = await fetch(
-        "https://14o28mtied.execute-api.us-east-2.amazonaws.com/production",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json;charset=utf-8",
-          },
-          body: JSON.stringify(values),
-        }
-      );
+      let response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(values),
+      });
       console.log(response);
     }
   };

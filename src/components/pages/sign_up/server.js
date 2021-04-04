@@ -4,10 +4,13 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
+
+app.get("/about", (req, res) => res.send("Hello World"));
 
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
@@ -30,6 +33,8 @@ router.post("/contact", (req, res) => {
   const lastName = req.body.lastName;
   const email = req.body.email;
   const contactNumber = req.body.contactNumber;
+
+  // res.send("Inside Post");
   const mail = {
     from: firstName + lastName,
     to: "fatehfitnessclient@gmail.com",
@@ -41,9 +46,13 @@ router.post("/contact", (req, res) => {
 
   contactEmail.sendMail(mail, (error) => {
     if (error) {
+      res.send("X");
+
       res.json({ status: "ERROR" });
     } else {
-      req.json({ status: "Message Sent" });
+      // res.send("Inside Post");
+      // res.send(req.json);
+      res.send({ status: "Message Sent" });
     }
   });
 });
