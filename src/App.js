@@ -6,6 +6,9 @@ import ServicesSection from "./components/ServicesSection";
 import Pricing from "./components/Pricing/Pricing";
 import Footer from "./components/Footer/Footer";
 import SignUp from "./components/pages/sign_up/SignUp";
+// import SignUp2 from "./components/pages/sign_up/SignUp2";
+// import { Helmet } from "react-helmet";
+// import FbPage from "./components/Footer/FbPagePlugin";
 
 function App() {
   return (
@@ -16,9 +19,9 @@ function App() {
           <CarouselSlider />
           <ServicesSection />
           <Pricing />
-          <Footer/>
+          <Footer />
         </Route>
-        <Route path="/SignUp">
+        <Route path="/signup">
           <SignUp />
         </Route>
       </Switch>

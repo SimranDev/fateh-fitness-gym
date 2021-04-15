@@ -104,11 +104,11 @@ const Navbar = () => {
           <div>
             <li className="nav-btn">
               {button ? (
-                <Link to="/SignUp">
+                <Link to="/signup">
                   <Button buttonStyle="btn--primary--solid">Free Trial</Button>
                 </Link>
               ) : (
-                <Link to="/SignUp">
+                <Link to="/signup">
                   <Button
                     buttonStyle="btn--primary--solid"
                     buttonSize="btn--mobile"

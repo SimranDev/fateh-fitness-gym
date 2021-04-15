@@ -1,6 +1,7 @@
 import "./Footer.css";
 import { MdLocationOn, MdLocalPhone, MdEmail } from "react-icons/md";
 import { ImWhatsapp, ImTwitter, ImFacebook, ImInstagram } from "react-icons/im";
+import FbPage from "./FbPagePlugin";
 
 const Footer = () => {
   const openWhatsApp = (whatsAppURL) => {
@@ -13,26 +14,7 @@ const Footer = () => {
         <div className="flex-row">
           <h3 className="fb-feed-txt">SOCIAL FEED</h3>
           <div className="fb-section">
-            <div
-              class="fb-page"
-              data-href="https://www.facebook.com/fatehfitnessgym5"
-              data-tabs="timeline"
-              data-width="500"
-              data-height="400"
-              data-small-header="true"
-              data-adapt-container-width="true"
-              data-hide-cover="true"
-              data-show-facepile="false"
-            >
-              <blockquote
-                cite="https://www.facebook.com/fatehfitnessgym5"
-                class="fb-xfbml-parse-ignore"
-              >
-                <a href="https://www.facebook.com/fatehfitnessgym5">
-                  Fateh Fitness Gym
-                </a>
-              </blockquote>
-            </div>
+            <FbPage />
           </div>
         </div>
 
