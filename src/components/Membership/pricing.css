@@ -30,7 +30,7 @@
   box-shadow: -1rem 0 3rem #fff;
   display: flex;
   flex-direction: column;
-  /* padding: 1.5rem; */
+  outline: none;
   transition: 0.2s;
   margin: 30px;
   position: relative;
@@ -79,7 +79,6 @@
     margin-bottom: -120px;
     margin-left: 30px;
     transition: transform 0.9s;
-    outline: none;
     box-shadow: 0 -1rem 3rem #fff;
   }
 

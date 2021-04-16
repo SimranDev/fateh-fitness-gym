@@ -1,13 +1,22 @@
 .slider-social-links {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  bottom: 16%;
-  right: 2%;
+  z-index: 1;
+  top: 50%;
+
+  /* right: 1.2vw;
+  margin: 6px; */
+  /* right: 2%; */
 }
 
 .carousel-container {
-  border: 1px red dotted;
+  display: contents;
+}
+
+.carousel-center-items {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-container img {
@@ -15,14 +24,22 @@
   object-fit: cover;
 }
 
+@media screen and (max-width: 450px) {
+  .carousel-container img {
+    height: 460px;
+  }
+}
+
 .carousel-msg {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
   position: absolute;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: whitesmoke;
-  margin: 30px;
   z-index: 1;
   padding: 10px;
-  text-align: initial;
-  width: 50%;
+  width: auto;
+  top: 8.2rem;
+  text-align: center;
+  margin: 0 10px;
 }

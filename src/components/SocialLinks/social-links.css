@@ -9,15 +9,30 @@
   color: white;
   height: 50px;
   width: 50px;
-  margin: 10px;
+  margin-bottom: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 
+.sm-btns-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* flex-direction: row; */
+}
+
 .sm-social-btn:hover {
   color: var(--darkBg);
+}
+
+@media screen and (max-width: 450px) {
+  .sm-social-btn {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 /* .sm-social-btn:first-child {

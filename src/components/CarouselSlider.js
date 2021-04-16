@@ -13,13 +13,14 @@ import SocialLinks from "./SocialLinks/SocialLinks";
 const CarouselSlider = () => {
   return (
     <div className="carousel-container">
-      <div className="carousel-msg">
-        The most advanced and premium fitness studio of district{" "}
-        <b>GURDASPUR</b>
-      </div>
-      <div className="slider-social-links">
-        <div>
-          <SocialLinks />
+      <div className="carousel-center-items">
+        <div className="carousel-msg">
+          The most advanced and premium fitness studio of district Gurdaspur!
+        </div>
+        <div className="slider-social-links">
+          <div>
+            <SocialLinks />
+          </div>
         </div>
       </div>
       <Carousel

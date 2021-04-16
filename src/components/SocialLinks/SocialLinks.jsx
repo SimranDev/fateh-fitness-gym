@@ -8,7 +8,7 @@ const SocialLinks = () => {
   };
 
   return (
-    <>
+    <div className="sm-btns-container">
       <div className="sm-social-btn">
         <ImWhatsapp
           className="sm-social-ic"
@@ -41,7 +41,7 @@ const SocialLinks = () => {
           }
         />
       </div>
-    </>
+    </div>
   );
 };
 
