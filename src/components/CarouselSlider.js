@@ -8,45 +8,49 @@ import img5 from "../images/image5.jpg";
 import Button from "./Button";
 
 import "./carousel_slider.css";
+import SocialLinks from "./SocialLinks/SocialLinks";
+
+// <div className="x">
+//             The most advanced and premium fitness studio of district{" "}
+//             <b>GURDASPUR</b>
+//           </div>
+//           <div className="y">
+//             <Button buttonStyle="btn--primary--outline" buttonSize="btn--large">
+//               SIGN UP TODAY
+//             </Button>
+//           </div>
 
 const CarouselSlider = () => {
   return (
-    <Carousel
-      className="carousel-container"
-      showThumbs={false}
-      showStatus={false}
-      infiniteLoop={true}
-      autoPlay={true}
-      interval={6000}
-    >
-      <div>
+    <div className="carousel-container">
+      <div className="slider-social-links">
+        <SocialLinks />
+      </div>
+      <Carousel
+        className="carousal"
+        showThumbs={false}
+        showStatus={false}
+        infiniteLoop={true}
+        autoPlay={true}
+        interval={6000}
+      >
         <div>
-          <div className="x">
-            The most advanced and premium fitness studio of district{" "}
-            <b>GURDASPUR</b>
-          </div>
-          <div className="y">
-            <Button buttonStyle="btn--primary--outline" buttonSize="btn--large">
-              SIGN UP TODAY
-            </Button>
-          </div>
+          <img src={img1} alt="img 1" />
         </div>
-
-        <img src={img1} alt="img 1" />
-      </div>
-      <div>
-        <img src={img2} alt="img 2" />
-      </div>
-      <div>
-        <img src={img3} alt="img 3" />
-      </div>
-      <div>
-        <img src={img4} alt="img 4" />
-      </div>
-      <div>
-        <img src={img5} alt="img 5" />
-      </div>
-    </Carousel>
+        <div>
+          <img src={img2} alt="img 2" />
+        </div>
+        <div>
+          <img src={img3} alt="img 3" />
+        </div>
+        <div>
+          <img src={img4} alt="img 4" />
+        </div>
+        <div>
+          <img src={img5} alt="img 5" />
+        </div>
+      </Carousel>{" "}
+    </div>
   );
 };
 

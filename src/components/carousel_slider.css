@@ -1,5 +1,19 @@
-np.carousel-container img {
-  height: 580px;
+.slider-social-links {
+  position: absolute;
+  background-color: var(--darkBg);
+  z-index: 2;
+  bottom: 10%;
+  right: 2%;
+  /* height: 400px; */
+  /* width: 400px; */
+}
+
+.carousel-container {
+  border: 1px red dotted;
+}
+
+.carousel-container img {
+  height: 600px;
   object-fit: cover;
 }
 

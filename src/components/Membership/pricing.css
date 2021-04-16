@@ -1,6 +1,6 @@
-/* .pricing-container {
+.pricing-container {
   background-color: var(--primaryDarkGreyFont);
-} */
+}
 
 /* .pricing-container div {
   border: red 1px dotted;
@@ -18,11 +18,12 @@
 .card-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0 0 2rem 0;
 }
 
 .card {
-  min-width: 300px;
+  width: 300px;
   height: 400px;
   border-radius: 4px;
   background-color: var(--primaryDarkGreyFont);
@@ -36,12 +37,14 @@
   /* margin: 2rem; */
 }
 
-.card:not(:first-child) {
-  margin-left: -130px;
-}
+@media screen and (min-width: 917px) {
+  .card:hover ~ .card {
+    transform: translateX(130px);
+  }
 
-.card:hover ~ .card {
-  transform: translateX(130px);
+  .card:not(:first-child) {
+    margin-left: -130px;
+  }
 }
 
 .banner-container {
@@ -61,4 +64,28 @@
   text-align: center;
   transform: rotate(-45deg) translate(-28%, -35%);
   box-shadow: 0px 4px 10px grey;
+}
+
+@media screen and (max-width: 916px) {
+  .card-container {
+    display: flex;
+    align-items: ;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 2rem 0;
+  }
+
+  .card {
+    margin-bottom: -120px;
+    margin-left: 30px;
+    transition: transform 2s;
+  }
+
+  .card:last-child {
+    margin-bottom: 0px;
+  }
+
+  .card:active ~ .card {
+    transform: translateY(130px);
+  }
 }
