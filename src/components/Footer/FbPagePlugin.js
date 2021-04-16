@@ -1,7 +1,7 @@
 const FbPage = () => {
   return (
     <div
-      class="fb-page"
+      className="fb-page"
       data-href="https://www.facebook.com/fatehfitnessgym5"
       data-tabs="timeline"
       data-width="500"
@@ -13,7 +13,7 @@ const FbPage = () => {
     >
       <blockquote
         cite="https://www.facebook.com/fatehfitnessgym5"
-        class="fb-xfbml-parse-ignore"
+        className="fb-xfbml-parse-ignore"
       >
         <a href="https://www.facebook.com/fatehfitnessgym5">
           Fateh Fitness Gym

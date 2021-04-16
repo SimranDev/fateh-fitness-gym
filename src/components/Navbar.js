@@ -40,7 +40,7 @@ const Navbar = () => {
     <div className="navbar" id="nav">
       <div className="tophead">
         <h6>+91-9815100033 &nbsp;&nbsp;|&nbsp;&nbsp; fatehfitness@gmail.com</h6>
-        <Link className="address" onClick={openAddress}>
+        <Link className="address" onClick={openAddress} to="/#">
           <MdLocationOn />
           <h6>Near Burj Sahib, Dhariwal, Gurdaspur</h6>
         </Link>
@@ -72,6 +72,7 @@ const Navbar = () => {
           <ScrollIntoView selector="#services">
             <li className="nav-item">
               <Link
+                to="/"
                 className="nav-links"
                 onClick={() => {
                   setClick(false);
@@ -85,6 +86,7 @@ const Navbar = () => {
           <ScrollIntoView selector="#pricing">
             <li className="nav-item">
               <Link
+                to="/"
                 className="nav-links"
                 onClick={() => {
                   setClick(false);

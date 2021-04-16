@@ -21,10 +21,10 @@ const CarouselSlider = () => {
     >
       <div>
         <div>
-          <li className="x">
+          <div className="x">
             The most advanced and premium fitness studio of district{" "}
             <b>GURDASPUR</b>
-          </li>
+          </div>
           <div className="y">
             <Button buttonStyle="btn--primary--outline" buttonSize="btn--large">
               SIGN UP TODAY

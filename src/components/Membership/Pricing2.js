@@ -1,3 +1,5 @@
+
+
 import Button from "../Button";
 import "./pricing.css";
 import { ReactComponent as IndividualIc } from "../../images/icons/individual.svg";
@@ -6,7 +8,7 @@ import { ReactComponent as CoupleIc } from "../../images/icons/couple.svg";
 
 import { Link } from "react-router-dom";
 
-const Pricing = () => {
+const Pricing2 = () => {
   return (
     <div id="pricing">
       <div className="pricing__section">
@@ -74,10 +76,10 @@ const Pricing = () => {
             </Link>
           </div>
         </div>
-        
       </div>
     </div>
   );
 };
 
-export default Pricing;
+export default Pricing2;
+
