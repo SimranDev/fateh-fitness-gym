@@ -1,6 +1,6 @@
-.pricing-container {
+/* .pricing-container {
   background-color: var(--primaryDarkGreyFont);
-}
+} */
 
 /* .pricing-container div {
   border: red 1px dotted;
@@ -69,7 +69,7 @@
 @media screen and (max-width: 916px) {
   .card-container {
     display: flex;
-    align-items: ;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     padding: 0 0 2rem 0;
@@ -78,14 +78,16 @@
   .card {
     margin-bottom: -120px;
     margin-left: 30px;
-    transition: transform 2s;
+    transition: transform 0.9s;
+    outline: none;
+    box-shadow: 0 -1rem 3rem #fff;
   }
 
   .card:last-child {
     margin-bottom: 0px;
   }
 
-  .card:active ~ .card {
-    transform: translateY(130px);
+  .card:focus ~ .card {
+    transform: translateY(100px);
   }
 }

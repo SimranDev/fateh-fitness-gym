@@ -10,21 +10,17 @@ import Button from "./Button";
 import "./carousel_slider.css";
 import SocialLinks from "./SocialLinks/SocialLinks";
 
-// <div className="x">
-//             The most advanced and premium fitness studio of district{" "}
-//             <b>GURDASPUR</b>
-//           </div>
-//           <div className="y">
-//             <Button buttonStyle="btn--primary--outline" buttonSize="btn--large">
-//               SIGN UP TODAY
-//             </Button>
-//           </div>
-
 const CarouselSlider = () => {
   return (
     <div className="carousel-container">
+      <div className="carousel-msg">
+        The most advanced and premium fitness studio of district{" "}
+        <b>GURDASPUR</b>
+      </div>
       <div className="slider-social-links">
-        <SocialLinks />
+        <div>
+          <SocialLinks />
+        </div>
       </div>
       <Carousel
         className="carousal"
@@ -49,7 +45,7 @@ const CarouselSlider = () => {
         <div>
           <img src={img5} alt="img 5" />
         </div>
-      </Carousel>{" "}
+      </Carousel>
     </div>
   );
 };

@@ -1,10 +1,12 @@
+import { withWidth } from "@material-ui/core";
+
 const FbPage = () => {
   return (
     <div
       className="fb-page"
       data-href="https://www.facebook.com/fatehfitnessgym5"
       data-tabs="timeline"
-      data-width="500"
+      style={{ width: "100%" }}
       data-height="400"
       data-small-header="true"
       data-adapt-container-width="true"

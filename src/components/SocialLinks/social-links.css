@@ -1,0 +1,30 @@
+.sm-social-ic {
+  height: 30px;
+  width: 30px;
+  /* background-color: white; */
+}
+
+.sm-social-btn {
+  background-color: var(--primary);
+  color: white;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sm-social-btn:hover {
+  color: var(--darkBg);
+}
+
+/* .sm-social-btn:first-child {
+  background-color: var(--primary);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
