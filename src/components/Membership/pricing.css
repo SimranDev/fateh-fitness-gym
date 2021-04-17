@@ -129,10 +129,10 @@
   }
 
   .card {
-    margin-bottom: -120px;
+    margin-bottom: -160px;
     margin-left: 30px;
     transition: transform 0.9s;
-    box-shadow: 0 -1rem 3rem #fff;
+    box-shadow: 0 -1rem 5rem 1.5rem #eeeeee;
   }
 
   .card:last-child {
@@ -140,7 +140,7 @@
   }
 
   .card:focus ~ .card {
-    transform: translateY(100px);
+    transform: translateY(160px);
   }
 
   .card:focus .banner {
