@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="tophead">
         <h6>+91-9815100033 &nbsp;&nbsp;|&nbsp;&nbsp; fatehfitness@gmail.com</h6>
         <Link className="address" onClick={openAddress} to="/#">
-          <MdLocationOn />
+          <MdLocationOn style={{ color: "var(--primaryDarkGreyFont)" }} />
           <h6>Near Burj Sahib, Dhariwal, Gurdaspur</h6>
         </Link>
       </div>
@@ -69,6 +69,20 @@ const Navbar = () => {
             </li>
           </ScrollIntoView>
 
+          <ScrollIntoView selector="#memberships">
+            <li className="nav-item">
+              <Link
+                to="/"
+                className="nav-links"
+                onClick={() => {
+                  setClick(false);
+                }}
+              >
+                Memberships
+              </Link>
+            </li>
+          </ScrollIntoView>
+
           <ScrollIntoView selector="#services">
             <li className="nav-item">
               <Link
@@ -83,19 +97,6 @@ const Navbar = () => {
             </li>
           </ScrollIntoView>
 
-          <ScrollIntoView selector="#pricing">
-            <li className="nav-item">
-              <Link
-                to="/"
-                className="nav-links"
-                onClick={() => {
-                  setClick(false);
-                }}
-              >
-                Memberships
-              </Link>
-            </li>
-          </ScrollIntoView>
           <ScrollIntoView selector="#footer">
             <li className="nav-item">
               <Link className="nav-links" to="/">

@@ -2,7 +2,7 @@ import "./pricing.css";
 
 const Pricing = () => {
   return (
-    <div className="pricing-container">
+    <div className="pricing-container" id="memberships">
       <h1 className="title">Memberships for Everyone</h1>
       <div className="card-container">
         <div className="card" tabIndex="1">

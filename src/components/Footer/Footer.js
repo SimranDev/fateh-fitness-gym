@@ -24,15 +24,15 @@ const Footer = () => {
             <ul className="list-items">
               <li>
                 <MdLocationOn className="ic" />
-                Near Burj Sahib, Dhariwal, Gurdaspur
+                <h4>Near Burj Sahib, Dhariwal, Gsp</h4>
               </li>
               <li>
                 <MdLocalPhone className="ic" />
-                +91-9815100033
+                <h4>+91-9815100033</h4>
               </li>
               <li>
                 <MdEmail className="ic" />
-                fatehfitness@gmail.com
+                <h4>fatehfitness@gmail.com</h4>
               </li>
             </ul>
           </div>
