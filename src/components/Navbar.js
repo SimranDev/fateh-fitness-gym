@@ -26,12 +26,7 @@ const Navbar = () => {
   };
 
   const openAddress = () => {
-    window.open(
-      "https://maps.google.com?q=" +
-        31.952451256273367 +
-        "," +
-        75.33288286995665
-    );
+    window.open("https://maps.google.com?q=" + 31.952494 + "," + 75.33261);
   };
 
   window.addEventListener("resize", showButton);
@@ -41,7 +36,7 @@ const Navbar = () => {
       <div className="tophead">
         <h6>+91-9815100033 &nbsp;&nbsp;|&nbsp;&nbsp; fatehfitness@gmail.com</h6>
         <Link className="address" onClick={openAddress} to="/#">
-          <MdLocationOn style={{ color: "var(--primaryDarkGreyFont)" }} />
+          <MdLocationOn style={{ color: "whitesmoke" }} />
           <h6>Near Burj Sahib, Dhariwal, Gurdaspur</h6>
         </Link>
       </div>
@@ -108,12 +103,14 @@ const Navbar = () => {
             <li className="nav-btn">
               {button ? (
                 <Link to="/signup">
-                  <Button buttonStyle="btn--primary--solid">Free Trial</Button>
+                  <Button buttonStyle="btn--primary--outline">
+                    Free Trial
+                  </Button>
                 </Link>
               ) : (
                 <Link to="/signup">
                   <Button
-                    buttonStyle="btn--primary--solid"
+                    buttonStyle="btn--primary--outline"
                     buttonSize="btn--mobile"
                   >
                     Free Trial

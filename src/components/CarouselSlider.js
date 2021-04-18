@@ -5,8 +5,6 @@ import img2 from "../images/image2.jpg";
 import img3 from "../images/image3.jpg";
 import img4 from "../images/image4.jpg";
 import img5 from "../images/image5.jpg";
-import Button from "./Button";
-
 import "./carousel_slider.css";
 import SocialLinks from "./SocialLinks/SocialLinks";
 

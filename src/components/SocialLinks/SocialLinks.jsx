@@ -1,10 +1,24 @@
-import { MdLocationOn, MdLocalPhone, MdEmail } from "react-icons/md";
-import { ImWhatsapp, ImTwitter, ImFacebook, ImInstagram } from "react-icons/im";
+import {
+  ImWhatsapp,
+  ImTwitter,
+  ImFacebook,
+  ImInstagram,
+  ImLocation,
+} from "react-icons/im";
 import "./social-links.css";
 
 const SocialLinks = () => {
   const openWhatsApp = (whatsAppURL) => {
     window.open(whatsAppURL);
+  };
+
+  const openAddress = () => {
+    window.open(
+      "https://maps.google.com?q=" +
+        31.952451256273367 +
+        "," +
+        75.33288286995665
+    );
   };
 
   return (
@@ -38,6 +52,16 @@ const SocialLinks = () => {
           className="sm-social-ic"
           onClick={() =>
             openWhatsApp("https://www.instagram.com/fatehfitnessgym/")
+          }
+        />
+      </div>
+      <div className="sm-social-btn">
+        <ImLocation
+          className="sm-social-ic"
+          onClick={() =>
+            openWhatsApp(
+              "https://maps.google.com?q=" + 31.952494 + "," + 75.33261
+            )
           }
         />
       </div>

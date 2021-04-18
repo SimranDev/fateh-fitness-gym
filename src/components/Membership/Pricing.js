@@ -32,17 +32,17 @@ const Pricing = () => {
             <h5>3-4 Person</h5>
           </div>
           <div className="membership-pricing">
-            <h2>₹ 34000/-</h2>
+            <h2>₹ 39000/-</h2>
             <h5>12 months</h5>
             <div className="pricing-divider"></div>
           </div>
           <div className="membership-pricing">
-            <h2>₹ 19000/-</h2>
+            <h2>₹ 23000/-</h2>
             <h5>6 months</h5>
             <div className="pricing-divider"></div>
           </div>
           <div className="membership-pricing">
-            <h2>₹ 10000/-</h2>
+            <h2>₹ 15000/-</h2>
             <h5>3 months</h5>
           </div>
           <h6>✔ including all premium service</h6>
@@ -70,17 +70,17 @@ const Pricing = () => {
             <h5>2 Person</h5>
           </div>
           <div className="membership-pricing">
-            <h2>₹ 25000/-</h2>
+            <h2>₹ 30000/-</h2>
             <h5>12 months</h5>
             <div className="pricing-divider"></div>
           </div>
           <div className="membership-pricing">
-            <h2>₹ 18000/-</h2>
+            <h2>₹ 17000/-</h2>
             <h5>6 months</h5>
             <div className="pricing-divider"></div>
           </div>
           <div className="membership-pricing">
-            <h2>₹ 12000/-</h2>
+            <h2>₹ 11000/-</h2>
             <h5>3 months</h5>
           </div>
           <h6>✔ including all premium service</h6>

@@ -1,5 +1,3 @@
-import { withWidth } from "@material-ui/core";
-
 const FbPage = () => {
   return (
     <div
