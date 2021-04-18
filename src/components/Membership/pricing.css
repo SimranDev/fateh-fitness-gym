@@ -57,7 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0 2rem 0;
+  padding-bottom: 4rem;
 }
 
 .card {
@@ -125,7 +125,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 0 0 2rem 0;
   }
 
   .card {

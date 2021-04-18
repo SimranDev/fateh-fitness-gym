@@ -14,10 +14,10 @@ import PoolTableImg from "../images/bg-Images/pool-table.jpg";
 
 const ServicesSection = () => {
   return (
-    <div>
+    <>
       <div className="service-parent-container" id="services">
         <h1 className="heading">SERVICES WE OFFER</h1>
-        <Grid container justify="center" >
+        <Grid container justify="center">
           <Grid item xs={12} sm={6} md={3}>
             <div className="service-container">
               <div
@@ -139,7 +139,7 @@ const ServicesSection = () => {
           </Grid>
         </Grid>
       </div>
-    </div>
+    </>
   );
 };
 
